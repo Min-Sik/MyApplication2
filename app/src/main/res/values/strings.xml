@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="hello">1회 소환(100수정)</string>
+    <string name="Bye">10 + 1회 소환 (1000수정) SR 확정!!!</string>
+    <string name="Bonus">10 + 1회 소환 (1000수정) SSR 확정!!!</string>
+    <string name="random"> UR : 0.5%, SSR : 1.6%, SR : 15.2%, R :  82.8%</string>
+</resources>
