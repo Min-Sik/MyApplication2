@@ -11,8 +11,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".ButtonAlignActivity" />
-        <activity android:name=".PrintStarActivity"></activity>
-        <activity android:name=".RelativeLayout"></activity>
+        <activity android:name=".PrintStarActivity" />
+        <activity android:name=".RelativeLayout" />
         <activity android:name=".menu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,6 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".TwoActivity" />
+        <activity android:name=".ThreeActivity"></activity>
     </application>
 
 </manifest>
