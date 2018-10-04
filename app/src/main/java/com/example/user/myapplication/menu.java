@@ -1,5 +1,6 @@
 package com.example.user.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -26,10 +27,19 @@ public class menu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(menu.this, "버튼1", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(menu.this, TwoActivity.class);
+                startActivity(intent);
             }
         });
         btn2 = findViewById(R.id.btn2);
-        btn2.setOnClickListener(new Button2());
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(menu.this, "버튼2", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(menu.this, ThreeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     class Button2 implements View.OnClickListener {

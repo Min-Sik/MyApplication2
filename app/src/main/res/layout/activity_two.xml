@@ -5,11 +5,184 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TwoActivity">
+    android:orientation="vertical"
+    tools:context=".TwoActivity"
+    android:background="#ec1c7cdc">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="계산기"/>
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/p1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="4"/>
+
+        <TextView
+            android:id="@+id/calc"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text=""/>
+
+        <EditText
+            android:id="@+id/p2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="4"/>
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text=""
+            android:maxLength="10"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1">
+
+              <Button style="@style/Dial"
+                  android:id="@+id/n7"
+                  android:onClick="pNum"
+                  android:text="7"/>
+
+              <Button style="@style/Dial"
+                  android:id="@+id/n8"
+                  android:onClick="pNum"
+                  android:text="8"/>
+
+              <Button style="@style/Dial"
+                  android:id="@+id/n9"
+                  android:onClick="pNum"
+                  android:text="9"/>
+
+          </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button style="@style/Dial"
+                    android:id="@+id/n4"
+                    android:onClick="pNum"
+                    android:text="4"/>
+
+                <Button style="@style/Dial"
+                    android:id="@+id/n5"
+                    android:onClick="pNum"
+                    android:text="5"/>
+
+                <Button style="@style/Dial"
+                    android:id="@+id/n6"
+                    android:onClick="pNum"
+                    android:text="6"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button style="@style/Dial"
+                    android:id="@+id/n1"
+                    android:onClick="pNum"
+                    android:text="1"/>
+
+                <Button style="@style/Dial"
+                    android:id="@+id/n2"
+                    android:onClick="pNum"
+                    android:text="2"/>
+
+                <Button style="@style/Dial"
+                    android:id="@+id/n3"
+                    android:onClick="pNum"
+                    android:text="3"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button style="@style/Dial"
+                    android:id="@+id/n0"
+                    android:onClick="pNum"
+                    android:text="0"/>
+
+                <Button style="@style/Dial"
+                    android:id="@+id/enter"
+                    android:layout_weight="2"
+                    android:onClick="enter"
+                    android:text="="/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button style="@style/Calc"
+                android:id="@+id/clear"
+                android:onClick="rightBtn"
+                android:text="C"/>
+
+            <Button style="@style/Calc"
+                android:id="@+id/mul"
+                android:onClick="rightBtn"
+                android:text="*"/>
+
+            <Button style="@style/Calc"
+                android:id="@+id/div"
+                android:onClick="rightBtn"
+                android:text="/"/>
+
+            <Button style="@style/Calc"
+                android:id="@+id/sub"
+                android:onClick="rightBtn"
+                android:text="-"/>
+
+            <Button style="@style/Calc"
+                android:id="@+id/sum"
+                android:onClick="rightBtn"
+                android:text="+"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
